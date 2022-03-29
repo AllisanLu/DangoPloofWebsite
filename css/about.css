@@ -1,0 +1,32 @@
+/*
+  About
+  ------------------------------------------------*/
+.about {
+    font-family: "Hashed Browns", "sans-serif";
+    margin-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.chibi {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60%
+}
+
+.box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+    .box > div {
+        padding: 0px;
+        margin: 0px;
+    }
+.about p {
+    font-family: "Pumpkin Story", "sans-serif";
+    padding: 10px;
+}

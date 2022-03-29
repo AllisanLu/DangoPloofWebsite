@@ -1,0 +1,98 @@
+/*
+Colors:
+
+#E8D6CB = Champagne Pink
+#D0ADA7 = silver Pink
+#AD6A6C = Copper Penny
+#5D2E46 = Old mauve
+#B58DB6 = Glossy Grape
+
+#DEF2C8 = light tea green
+#C5DAC1 = tea green
+#A9B2AC = Ashe Gray
+#BCD0C7 = opal
+#ebaca4 = day color on calendar
+*/
+
+/*
+Global styles
+________________________________________________________
+*/
+@font-face {
+    font-family: "Pumpkin Story";
+    src: url(../fonts/pumpkin_story/PumpkinStory.ttf);
+}
+@font-face {
+    font-family: "Hashed Browns";
+    src: url(../fonts/hashed_browns/HashedBrowns.ttf);
+}
+  
+  /*
+  Welcome
+  ------------------------------------------------*/
+.welcome {
+    margin: 0px;
+    padding: 30px 10px 20px;
+    text-align: center;
+    color: #a36264;
+    background-image: url('../images/collage.png');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: repeat;
+}
+.welcome-content {
+    background-color: rgb(75 41 94 / 0.85);
+    margin: 20px;
+    padding: 10px 0px 10px;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    flex-wrap: wrap;
+    border-radius: 3px;
+}
+  .welcome h1 {
+    font-family: "Pumpkin Story", sans-serif;
+    font-size: 50px;
+  }
+  .welcome img {
+      width: 20%;
+      height: auto;
+  }
+  
+  /*
+  Featured
+  ------------------------------------------------*/
+  .featured {
+    font-family: "Hashed Browns", "sans-serif";
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .featured p {
+    font-family: "Pumpkin Story", "sans-serif";
+  }
+  .featured-item {
+    overflow: hidden; /* clear the floating */
+  }
+  /*
+  Calendar info
+  ------------------------------------------------*/
+  .calendar {
+    font-family: "Hashed Browns", "sans-serif";
+    padding-left: 15px;
+    padding-bottom: 10px;
+  }
+  .calendar p {
+    font-family: "Pumpkin Story", "sans-serif";
+    padding: 0px;
+  }
+
+  .details {
+      width: 70%;
+      display:block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-bottom: 80px;
+  }
+  
