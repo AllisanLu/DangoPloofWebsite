@@ -5,7 +5,7 @@ const mysql = require("mysql2")
 const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "Wahaha!!",
+    password: "11212020",
     database: "dangoploof"
 });
 
@@ -34,6 +34,10 @@ app.get("/commissions", function (req, res) {
 
 app.get("/shop", function (req, res) {
     res.sendFile(__dirname + "/public/" + "shop.html");
+})
+
+app.get("/login", function (req, res) {
+    res.sendFile(__dirname + "/public/" + "login.html");
 })
 
 app.post("/register", function (req, res) {

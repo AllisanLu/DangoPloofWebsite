@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login</title>
+        <!--import style sheet-->
+        <link href="index.css" rel="stylesheet">
+        <script src="index.js" defer></script>
+    </head>
+    <body>
+        <form method="POST" action="/attempt_login">
+            <div>
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" placeholder="username">
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <input type="password" name="password", id="password" placeholder="password">
+            </div>
+            <div>
+                <input type="submit" value="login" id="login">
+            </div>
+        </form>
+        <p hidden id="message"></p>
+        <div>
+            <p>Not a user? <a href="registration">Register here</a></p>
+        </div>
+        <div>
+            <p><a href="index">Main Page</a></p>
+        </div>
+        
+    </body>
+</html>
