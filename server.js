@@ -40,6 +40,10 @@ app.get("/login", function (req, res) {
     res.sendFile(__dirname + "/public/" + "login.html");
 })
 
+app.get("/registration", function (req, res) {
+    res.sendFile(__dirname + "/public/" + "registration.html");
+})
+
 app.post("/register", function (req, res) {
     // we check to see if username is available
     usernameQuery = "Select username from registeredUsers where username  = ?"
