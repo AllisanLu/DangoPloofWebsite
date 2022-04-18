@@ -136,6 +136,11 @@ header {
         opacity: 1;
     }
 
+.card-img {
+    width: 80%;
+    padding: 0px;
+}
+
 .card-row {
     padding: 10px;
     display: flex;
