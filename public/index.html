@@ -7,25 +7,29 @@
     <link rel="icon" href="images/dango_fin.png" />
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/site.css" />
+
     <script type="text/javascript" src="https://stylemygcal.com/widget.js"></script>
 </head>
 <body>
     <header>
         <div class="navigation-bar">
-            <div class="navigation-item"><p>Dango Ploof</p></div>
+            <div class="links">
+                <div class="navigation-item"><p>Dango Ploof</p></div>
+                <div class="navigation-item"><p><a href="login">Login</a></p></div>
+            </div>
             <div class="links">
                 <div class="navigation-item"><p><a href="index">Home</a></p></div>
                 <div class="navigation-item"><p><a href="about">About</a></p></div>
                 <div class="navigation-item"><p><a href="shop">Shop</a></p></div>
                 <div class="navigation-item"><p><a href="commissions">Commissions</a></p></div>
-                <div class="navigation-item"><p><a href="login">Login</a></p></div>
+                <div class="navigation-item"><p><a href="pay">Cart</a></p></div>
             </div>
         </div>
     </header>
     <section class="welcome">
-        <div class="welcome-content">
+        <div class="welcome-content" style="border-radius: 20px">
             <div class="non-transparent" style="opacity: 1">
-                <img src="images/dango_fin.png" alt="Dango logo" />
+                <img id="dango" src="images/dango_fin.png" alt="Dango logo" />
                 <h1>Dango Ploof Crochets</h1>
                 <section>
                     <h2>❤ Ploofs of love</h2>
@@ -74,5 +78,6 @@
             </ul>
         </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

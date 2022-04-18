@@ -36,12 +36,17 @@ app.get("/shop", function (req, res) {
     res.sendFile(__dirname + "/public/" + "shop.html");
 })
 
+
 app.get("/login", function (req, res) {
     res.sendFile(__dirname + "/public/" + "login.html");
 })
 
 app.get("/registration", function (req, res) {
     res.sendFile(__dirname + "/public/" + "registration.html");
+})
+
+app.get("/pay", function (req, res) {
+    res.sendFile(__dirname + "/public/" + "pay.html");
 })
 
 app.post("/register", function (req, res) {
