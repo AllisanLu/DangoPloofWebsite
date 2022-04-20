@@ -7,7 +7,7 @@ const costFactor = 10;
 const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "11212020",
+    password: "Wahaha!!",
     database: "dangoploof"
 });
 
@@ -33,8 +33,8 @@ app.post("/attempt_login", function(req, res){
             // bcrypt.compareSync let's us compare the plaintext password to the hashed password we stored in our database
             if (bcrypt.compareSync(req.body.password, storedPassword)){
                 authenticated = true;
-                // res.json({ success: true, message: "logged in" })
-                res.redirect("https://www.google.com")
+                res.json({ success: true, message: "logged in" })
+               // res.redirect("/index")
             }else{
                 res.json({success: false, message:"password is incorrect"})
             }
