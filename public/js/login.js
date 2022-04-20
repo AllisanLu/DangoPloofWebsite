@@ -24,6 +24,7 @@ function responseHandler(){
     message.style.display = "block"
     if (this.response.success){    
         message.innerText = this.response.message
+       // window.location.href = "https://www.google.com";
     }else{
         console.log(this.response.success)
         message.innerText = this.response.message
