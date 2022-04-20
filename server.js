@@ -7,7 +7,7 @@ const costFactor = 10;
 const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "Wahaha!!",
+    password: "11212020",
     database: "dangoploof"
 });
 

@@ -129,7 +129,7 @@ header {
     flex-wrap: wrap;
     flex: 400px;
     opacity: 0.75;
-    border-radius: 3px;
+    border-radius: 15px;
 }
 
     .card:hover {
@@ -145,7 +145,16 @@ header {
     padding: 10px;
     display: flex;
     align-content: center;
+    align-items: flex-start;
     flex-direction: row;
+}
+
+.expand {
+    cursor: pointer;
+}
+
+.collapse {
+    cursor: pointer;
 }
 
 
