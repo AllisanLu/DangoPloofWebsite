@@ -18,14 +18,12 @@ if (images.length <= 0) {
 
             media = media.edge_owner_to_timeline_media.edges;
 
-            let html = "";
             for (let i = 0; i < media.length; i++) {
                 let display = media[i].node;
-                images.push('<img src="' + display.display_url + '" width="' + display.dimensions.width + '" height="' + display.dimensions.height + '">');
-                //<img src="" width="" height="">
-                html += images[i];
+                images.push('<img src="/proxy?url=' + display.display_url + '" width="' + display.dimensions.width + '" height="' + display.dimensions.height + '">');
             }
-            posts.innerHTML = html;
+            console.log(Math.random() * images.length);
+            posts.innerHTML = images[Math.floor(Math.random() * images.length)];
         }
     });
 
@@ -35,9 +33,5 @@ if (images.length <= 0) {
 
     xhr.send(data);
 } else {
-    let html = "";
-    for (let i = 0; i < images.length; i++) {
-        html += images[i];
-    }
-    posts.innerHTML = html;
+    posts.innerHTML = images[Math.random() * images.length];
 }
