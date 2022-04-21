@@ -1,6 +1,11 @@
 const data = null;
 var query = "";
 let moneys = Array.from(document.getElementsByClassName("money"));
+
+let baseUSD = [];
+for (let i = 0; i < moneys.length; i++) {
+    baseUSD.push(moneys[i].textContent);
+}
 let signs = Array.from(document.getElementsByClassName("sign"))
 let currentCurrency = "USD";
 
@@ -11,6 +16,16 @@ function convertToEuros() {
     currentCurrency = "EUR";
     for (let i = 0; i < signs.length; i++) {
         signs[i].textContent = "\u20AC"
+    }
+}
+
+function convertToUSD() {
+    for (let i = 0; i < moneys.length; i++) {
+        moneys[i].textContent = baseUSD[i];
+    }
+    currentCurrency = "USD";
+    for (let i = 0; i < signs.length; i++) {
+        signs[i].textContent = "$"
     }
 }
 
@@ -48,3 +63,4 @@ function conversionRate(fromCurrency, toCurrency) {
 }
 
 document.getElementById("euroButton").addEventListener("click", convertToEuros);
+document.getElementById("usdButton").addEventListener("click", convertToUSD);
