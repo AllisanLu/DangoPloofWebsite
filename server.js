@@ -21,7 +21,10 @@ connection.connect(function (err) {
 
 const app = express();
 app.use(express.static("public"));
-app.use(express.urlencoded({extended:false}));
+app.use(express.urlencoded({ extended: false }));
+
+const proxy = require('pass-cors')
+app.use('/proxy', proxy);
 
 app.post("/attempt_login", function(req, res){
     // we check for the username and password to match.
@@ -71,6 +74,8 @@ app.post("/register", function (req, res) {
     });
 })
 
+
+// All the linking of the pages and urls
 app.get("/index", function (req, res) {
     res.sendFile(__dirname + "/public/" + "index.html");
 })
@@ -100,7 +105,11 @@ app.get("/pay", function (req, res) {
     res.sendFile(__dirname + "/public/" + "pay.html");
 })
 
+app.get("/gallery", function (req, res) {
+    res.sendFile(__dirname + "/public/" + "gallery.html");
+})
 
-app.listen(3000, function () {
-    console.log("Listening on port 3000...");
-});
+
+app.listen(process.env.PORT || 3000, function () {
+    console.log("Listening on port 3000");
+})
