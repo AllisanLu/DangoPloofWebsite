@@ -1,5 +1,5 @@
 const express = require("express");
-const { json, redirect } = require("express/lib/response");
+const { json, redirect, status } = require("express/lib/response");
 const mysql = require("mysql2")
 const bcrypt = require("bcryptjs")
 const costFactor = 10; 
@@ -7,7 +7,7 @@ const costFactor = 10;
 const connection = mysql.createConnection({
     host: "localhost",
     user: "root",
-    password: "Wahaha!!",
+    password: "11212020",
     database: "dangoploof"
 });
 
@@ -34,7 +34,6 @@ app.post("/attempt_login", function(req, res){
             if (bcrypt.compareSync(req.body.password, storedPassword)){
                 authenticated = true;
                 res.json({ success: true, message: "logged in" })
-               // res.redirect("/index")
             }else{
                 res.json({success: false, message:"password is incorrect"})
             }
